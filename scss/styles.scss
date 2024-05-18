@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Adamina&family=Roboto&display=swap");
+@import "variables.scss";
+@import "global.scss";
+@import "mixins.scss";
+
+.container {
+  margin: 0 auto;
+  padding: 250px 20px 40px;
+  max-width: 300px;
+  @include location;
+  h1 {
+    margin-bottom: 35px;
+    font-weight: 400;
+    font-family: $accent-font;
+    font-size: 60px;
+    @include location;
+  }
+  p {
+    margin-bottom: 25px;
+    @include location;
+    font-size: $font-size-mobile;
+  }
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+  .container {
+    padding: 200px 15px 70px;
+    max-width: 510px;
+    h1 {
+      margin-bottom: 45px;
+      font-weight: 400;
+    }
+    p {
+      margin-bottom: 25px;
+      font-size: $font-size-tablet;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+  .container {
+    padding: 150px 15px 60px;
+    max-width: 700px;
+    h1 {
+      margin-bottom: 55px;
+      font-weight: 400;
+      font-size: 80px;
+    }
+    p {
+      margin-bottom: 35px;
+
+      font-size: $font-size-desktop;
+    }
+  }
+}
+
+.container-img {
+  height: 850px;
+  background-image: linear-gradient(
+      to right,
+      rgba(9, 9, 9, 0.5),
+      rgba(9, 9, 9, 0.5)
+    ),
+    url("../img/bg-img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.btn {
+  color: $secondary-color;
+  background-color: $accent-color;
+  padding: 15px 10px;
+  position: relative;
+  max-width: 130px;
+  @include location;
+  display: inline-block;
+  font-size: $font-size-mobile;
+  margin-bottom: 260px;
+  @include transition-btn(130px, 20px, 0.5s, $cubic-bezier);
+  &:hover {
+    width: 130px;
+    height: 25px;
+  }
+  & span {
+    @include transition(opacity, 1, 0.2s, $cubic-bezier);
+    transition: 4.8s;
+  }
+  &:hover span {
+    opacity: 0;
+    transition: 0s;
+  }
+  &::after {
+    content: "646 (111) 1111";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    @include transition(opacity, 0, 0.7s, $cubic-bezier);
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+  .btn {
+    padding: 20px 25px;
+    max-width: 140px;
+    font-size: $font-size-tablet;
+    margin-bottom: 290px;
+    &:hover {
+      width: 140px;
+      height: 25px;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+  .btn {
+    font-size: $font-size-desktop;
+    margin-bottom: 230px;
+  }
+}
+
+ul {
+  @include direction(row);
+  gap: 10px;
+  li {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+.social-link {
+  &:hover .social-icon {
+    fill: $accent-color;
+  }
+  & .social-icon {
+    width: 40px;
+    height: 40px;
+    opacity: 70%;
+    @include transition(fill, $secondary-color, 0.7s, $cubic-bezier);
+  }
+}

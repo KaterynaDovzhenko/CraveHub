@@ -1,0 +1,21 @@
+@mixin transition-btn($width, $height, $time, $cubic-bezier) {
+  width: $width;
+  height: $height;
+  transition: width $time $cubic-bezier, height $time $cubic-bezier;
+}
+
+@mixin transition($property, $value, $time, $cubic-bezier) {
+  #{$property}: $value;
+  transition: #{$property} $time $cubic-bezier;
+}
+
+@mixin direction($dir) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin location {
+  text-align: center;
+}
