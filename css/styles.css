@@ -22,6 +22,12 @@ body {
   height: 100%;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .container {
   margin: 0 auto;
   padding: 180px 20px 40px;
