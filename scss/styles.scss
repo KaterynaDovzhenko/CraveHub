@@ -48,7 +48,6 @@
     }
     p {
       margin-bottom: 35px;
-
       font-size: $font-size-desktop;
     }
   }
@@ -66,7 +65,6 @@
   background-position: center;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
 }
 
 .btn {
@@ -78,7 +76,7 @@
   @include location;
   display: inline-block;
   font-size: $font-size-mobile;
-  margin-bottom: 260px;
+  margin-bottom: 190px;
   @include transition-btn(130px, 20px, 0.5s, $cubic-bezier);
   &:hover {
     width: 130px;
