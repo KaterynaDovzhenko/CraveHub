@@ -15,18 +15,10 @@ a {
 }
 
 body {
+  background-color: #3d3024;
   color: #f5f5f5;
   font-family: "Roboto", sans-serif;
-  margin: 0;
-  height: 100%;
-  width: 100%;
   overflow: hidden;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
 }
 
 .container {
@@ -174,13 +166,6 @@ ul li {
     width: 40px;
     height: 40px;
   }
-}
-.main__section {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
 }
 
 /*# sourceMappingURL=styles.css.map */

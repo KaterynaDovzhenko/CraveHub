@@ -14,17 +14,8 @@ a {
 }
 
 body {
-  // background-color: $bg-color;
+  background-color: $bg-color;
   color: $secondary-color;
   font-family: $main-font;
-  margin: 0;
-  height: 100%;
-  width: 100%;
   overflow: hidden;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
 }
