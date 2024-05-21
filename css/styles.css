@@ -23,7 +23,7 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: 220px 20px 40px;
+  padding: 180px 20px 40px;
   max-width: 300px;
   text-align: center;
 }
@@ -75,7 +75,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   width: 100vw;
-  height: 100vh;
+  max-height: 860px;
 }
 
 .btn {

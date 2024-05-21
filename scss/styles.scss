@@ -5,7 +5,7 @@
 
 .container {
   margin: 0 auto;
-  padding: 250px 20px 40px;
+  padding: 180px 20px 40px;
   max-width: 300px;
   @include location;
   h1 {
@@ -64,7 +64,7 @@
   background-repeat: no-repeat;
   background-position: center;
   width: 100vw;
-  height: 100vh;
+  max-height: 860px;
 }
 
 .btn {
